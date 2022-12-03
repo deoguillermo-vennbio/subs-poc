@@ -2,7 +2,7 @@
 name = "subs-poc"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Deo <deo.guillermo@venn.bio>"]
 readme = "README.md"
 packages = [{include = "subs_poc"}]
 
@@ -13,10 +13,8 @@ ariadne = "0.16.1"
 starlette = "0.20.4"
 broadcaster = "0.2.0"
 websockets = "^10.4"
-
-
-[tool.poetry.group.dev.dependencies]
-scons = "^4.4.0"
+asyncio-redis = "^0.16.0"
+PyYAML = "^6.0"
 
 [build-system]
 requires = ["poetry-core"]

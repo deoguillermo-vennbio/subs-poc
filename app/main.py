@@ -11,8 +11,8 @@ app = Starlette(
     on_shutdown=[broadcast.disconnect]
 )
 
-@app.route('/')
-async def homepage(request):
-    return JSONResponse({'hello': 'worldsz'})
+@app.route('/health-check', methods=['GET'])
+async def health_check(request):
+    return JSONResponse({'status': 'ok'})
 
 app.mount('/graphql', GraphQL(gql_schema, debug=True))

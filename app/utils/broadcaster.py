@@ -1,2 +1,5 @@
+import os
 import broadcaster
-broadcast = broadcaster.Broadcast('memory://')
+
+REDIS_URL = os.getenv('REDIS_URL')
+broadcast = broadcaster.Broadcast(REDIS_URL)
