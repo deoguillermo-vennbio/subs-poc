@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "subs-poc"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "subs_poc"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+uvicorn = "0.20.0"
+ariadne = "0.16.1"
+starlette = "0.20.4"
+broadcaster = "0.2.0"
+websockets = "^10.4"
+
+
+[tool.poetry.group.dev.dependencies]
+scons = "^4.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

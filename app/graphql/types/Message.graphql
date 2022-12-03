@@ -1,0 +1,8 @@
+input PushMessageInput {
+    text: String!
+}
+
+type Message {
+    text: String!
+    created: String!
+}
